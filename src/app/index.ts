@@ -9,10 +9,10 @@ import { CurrencyExchangeModule } from '../currency-exchange';
     AppComponent,
   ],
   imports: [
-    BrowserModule,
     CurrencyExchangeModule,
+    BrowserModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -11,5 +11,8 @@ import { CurrencyExchangeComponent } from './components/currency-exchange';
     BrowserModule
   ],
   providers: [],
+  exports: [
+    CurrencyExchangeComponent,
+  ],
 })
 export class CurrencyExchangeModule { }
