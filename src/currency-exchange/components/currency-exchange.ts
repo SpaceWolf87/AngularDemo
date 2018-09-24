@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { CurrencyRatesService } from '../services/currency-rates-service';
-import { CurrencyRates } from '../models';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-currency-exchange',
@@ -9,18 +7,5 @@ import { CurrencyRates } from '../models';
 })
 
 export class CurrencyExchangeComponent {
-  currencyRatesList: CurrencyRates[];
-  constructor(private currencyRatesService: CurrencyRatesService) {}
-
-  ngOnInit() {
-    this.getExchangeRatesList();
-  }
-
-  getExchangeRatesList() {
-    this.currencyRatesService.getExchangeRatesList().subscribe(
-      data => {
-        this.currencyRatesList = data;
-      }
-    );
-  }
+  test = 'muhuhahahahaaa';
 }
