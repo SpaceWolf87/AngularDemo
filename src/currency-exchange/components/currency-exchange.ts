@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {TableModule} from 'primeng/table';
+
 import { CurrencyRatesService } from '../services/currency-rates-service';
 import { CurrencyRates } from '../models';
 

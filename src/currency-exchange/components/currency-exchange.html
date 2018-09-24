@@ -1,6 +1,18 @@
-<div></div>
-<ul>
-  <li *ngFor="let CurrencyRates of currencyRatesList">
-    {{CurrencyRates.shortName}}
-  </li>
-</ul>
+<p-table [value]="currencyRatesList">
+  <ng-template pTemplate="header">
+       <tr>
+           <th>short name</th>
+           <th>name</th>
+           <th>country</th>
+           <th>mid rate</th>
+       </tr>
+   </ng-template>
+   <ng-template pTemplate="body" let-CurrencyRates>
+        <tr>
+            <td>{{CurrencyRates.shortName}}</td>
+            <td>{{CurrencyRates.name}}</td>
+            <td>{{CurrencyRates.country}}</td>
+            <td>{{CurrencyRates.currMid}}</td>
+        </tr>
+    </ng-template>
+</p-table>

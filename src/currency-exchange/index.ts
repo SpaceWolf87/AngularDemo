@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CurrencyRatesService } from './services/currency-rates-service';
+import { HttpClientModule} from '@angular/common/http';
+import {TableModule} from 'primeng/table';
 
+import { CurrencyRatesService } from './services/currency-rates-service';
 import { CurrencyExchangeComponent } from './components/currency-exchange';
 
-import { HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +15,7 @@ import { HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
+    TableModule,
   ],
   providers: [
     CurrencyRatesService,
